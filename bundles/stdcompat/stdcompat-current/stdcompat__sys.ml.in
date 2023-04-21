@@ -1,11 +1,5 @@
 include Sys
 
-@BEGIN_BEFORE_4_12_0@
-external mkdir : string -> int -> unit = "caml_sys_mkdir"
-
-external rmdir : string -> unit = "caml_sys_rmdir"
-@END_BEFORE_4_12_0@
-
 @BEGIN_BEFORE_4_10_0@
 module Immediate64 = struct
   module type Non_immediate = sig

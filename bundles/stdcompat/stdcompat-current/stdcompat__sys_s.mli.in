@@ -126,20 +126,9 @@ val ocaml_release : ocaml_release_info
 @BEGIN_FROM_4_12_0@
 external mkdir : string -> int -> unit = "caml_sys_mkdir"
 @END_FROM_4_12_0@
-@BEGIN_BEFORE_4_12_0@
-val mkdir : string -> int -> unit
-@END_BEFORE_4_12_0@
-(** @since 4.12.0: external mkdir : string -> int -> unit = "caml_sys_mkdir"
- *)
-
 @BEGIN_FROM_4_12_0@
 external rmdir : string -> unit = "caml_sys_rmdir"
 @END_FROM_4_12_0@
-@BEGIN_BEFORE_4_12_0@
-val rmdir : string -> unit
-@END_BEFORE_4_12_0@
-(** @since 4.12.0: external rmdir : string -> unit = "caml_sys_rmdir"
- *)
 
 val max_floatarray_length : int
 (** @since 4.08.0: val max_floatarray_length : int *)
